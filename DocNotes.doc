@@ -1,0 +1,142 @@
+Project Title: Automated Google Web Form Creator, and Manager
+Overview: The goal of this project is to develop a web application that allows users to create Google Forms programmatically, save these forms in a structured manner within Google Drive, and manage them efficiently with the ability to organize forms into folders and sub-folders.
+NOTE: The students do not have to meet all the requirements in order to submit their work, but those who complete more requirements faster will be ranked higher. 
+Key Features:
+User Authentication: Implement user authentication using OAuth 2.0 to allow users to securely connect their Google accounts to the application.
+Form Creation Interface: Develop an intuitive web-based interface for users to create custom Google Forms. The interface should allow users to add various types of form fields (e.g., text fields, multiple-choice questions, checkboxes, etc.), set required fields, add descriptions, and configure other form settings.
+Google Drive Integration: Integrate with the Google Drive API to enable the application to create folders and sub-folders for organizing the generated forms. Each form created through the application should be saved in the user's Google Drive account within the specified folder structure (very important).
+Form Templates: Provide pre-designed form templates for common use cases (e.g., experiment request form, feedback surveys, experiment result forms, etc.) to help users kickstart their form creation process.
+Customization Options: Allow users to customize the appearance of their forms by selecting themes, fonts, and colors.
+Form Preview: Enable users to preview the created form before saving it to Google Drive to ensure it meets their requirements.
+Form Management Dashboard: Create a dashboard where users can view, edit, duplicate, and delete their saved forms. They should also be able to organize forms into folders and sub-folders directly from the dashboard.
+Search Functionality: Implement a search feature that allows users to quickly locate specific forms within their collection, even in large repositories.
+Collaboration and Sharing: Enable users to share their forms with collaborators by providing them with view or edit permissions. This feature should leverage Google Drive's sharing capabilities.
+Version Control: Implement version control for forms, allowing users to track changes and revert to previous versions if needed.
+Responsive Design: Ensure that the web application is responsive and works seamlessly across various devices and screen sizes.
+Error Handling and Logging: Implement robust error handling mechanisms and logging functionalities to track errors and exceptions for debugging purposes.
+Documentation and Help Resources: Provide comprehensive documentation and help resources to guide users through the form creation process, integration with Google Drive, and other functionalities of the application.
+Tech Stack: The below are provided for your information. You can use other options if you need to.
+Python Option:
+Backend: Flask or Django
+Google APIs Integration: Google Client Library for Python
+Database: MongoDB (via pymongo) or PostgreSQL (via psycopg2)
+Frontend: React.js or Angular (communicating with backend via RESTful APIs)
+Additional Libraries/Tools: Redux (for state management), Axios (for HTTP requests)
+JavaScript Option:
+Backend: Node.js with Express.js
+Google APIs Integration: Google Client Library for JavaScript
+Database: MongoDB (with Mongoose) or PostgreSQL (with pg-promise or Sequelize)
+Frontend: React.js or Angular
+Additional Libraries/Tools: Redux (for state management), Axios (for HTTP requests)
+
+Additional Information:
+The folder structure for organizing forms will follow a hierarchical pattern similar to the following:
+- BAA
+  - DED-A-01-08
+    - BAA01
+    - BAA02
+    - BAA03
+    - BAA04
+    - BAA05
+    - BAA06
+    - BAA07
+    - BAA08
+    - EDS-EBSD
+    - Microhardness
+    - syn
+    - XRD
+  - DED-A-09-16
+    - BAA09
+    - BAA10
+    - BAA11
+    - BAA12
+    - BAA13
+    - BAA14
+    - BAA15
+    - BAA16
+    - EDS-EBSD
+    - Microhardness
+    - syn
+    - XRD
+  - DED-B-01-08
+    - BAA01
+    - BAA02
+    - BAA03
+    - BAA04
+    - BAA05
+    - BAA06
+    - BAA07
+    - BAA08
+    - EDS-EBSD
+    - Microhardness
+    - syn
+    - XRD
+  - DED-B-09-16
+    - BAA09
+    - BAA10
+    - BAA11
+    - BAA12
+    - BAA13
+    - BAA14
+    - BAA15
+    - BAA16
+    - EDS-EBSD
+    - Microhardness
+    - syn
+    - XRD
+  - DED-C-01-08
+    - BAA01
+    - BAA02
+    - BAA03
+    - BAA04
+    - BAA05
+    - BAA06
+    - BAA07
+    - BAA08
+    - EDS-EBSD
+    - Microhardness
+    - syn
+    - XRD
+  - DED-C-09-16
+    - BAA09
+    - BAA10
+    - BAA11
+    - BAA12
+    - BAA13
+    - BAA14
+    - BAA15
+    - BAA16
+    - EDS-EBSD
+    - Microhardness
+    - syn
+    - XRD
+- VAM-A
+  - BAA01
+    - Compression (SHPT)
+    - EDS
+    - Microhardness
+    - NI-HSR
+    - NI-SRJT
+    - LIPIT
+    - SPT
+    - syn
+    - Tensile
+    - XRD
+  - BAA02
+    (Similar structure as BAA01)
+  ...
+  - BAA16
+    (Similar structure as BAA01)
+
+
+This structure ensures that forms are saved in folders corresponding to their respective categories and sub-categories. Each form is then placed within the appropriate sub-folder based on the predefined folder structure provided.
+
+
+
+
+
+
+
+
+
+
